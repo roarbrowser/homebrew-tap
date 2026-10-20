@@ -9,6 +9,8 @@ cask "roar" do
   desc "AI-native, open-source Chromium browser your agent can drive"
   homepage "https://github.com/roarbrowser/roar"
 
+  disable! date: "2026-10-20", because: "macOS build temporarily unavailable"
+
   depends_on arch: :arm64
   depends_on macos: :ventura
 
