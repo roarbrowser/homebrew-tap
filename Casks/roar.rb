@@ -1,15 +1,13 @@
 # Homebrew cask for Roar. Lives in the roarbrowser/homebrew-tap tap as Casks/roar.rb;
 # scripts/release.sh updates version and sha256 here on each release.
 cask "roar" do
-  version "0.37.13"
-  sha256 "1e89a34ea40c8f928052b43802358ff05529ad8562569b6160a9285dfe2067af"
+  version "0.37.14"
+  sha256 "40e5821436e576b02332e6db9d2f1e242dc41508540d1fcff789b4b09a813323"
 
   url "https://github.com/roarbrowser/roar/releases/download/v#{version}/Roar-#{version}.dmg"
   name "Roar"
   desc "AI-native, open-source Chromium browser your agent can drive"
   homepage "https://github.com/roarbrowser/roar"
-
-  disable! date: "2026-10-20", because: "macOS build temporarily unavailable"
 
   depends_on arch: :arm64
   depends_on macos: :ventura
